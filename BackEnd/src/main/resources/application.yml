@@ -1,0 +1,3 @@
+# 配置SpringBoot的启动端口 即服务器会占用本机8081端口
+server:
+  port: 8081
