@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +56,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -67,7 +65,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BackEndApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.BackEndApplication">
     <configuration name="BackEndApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackEnd" />
       <extension name="coverage">
@@ -123,7 +121,7 @@
       <updated>1699626986375</updated>
       <workItem from="1699626989083" duration="677000" />
       <workItem from="1699627675586" duration="599000" />
-      <workItem from="1699628283805" duration="8796000" />
+      <workItem from="1699628283805" duration="11414000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -133,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699629887928</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功">
+      <option name="closed" value="true" />
+      <created>1700321087242</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700321087242</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +158,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题" />
+    <MESSAGE value="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功" />
   </component>
 </project>
