@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/19 9:57&#10;Service Controller简单用例完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/BackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/BackEndApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +52,13 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/clean/Library/Application Support/JetBrains/IntelliJIdea2023.2/node/node-v18.15.0-darwin-x64/bin/node",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -65,7 +67,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.BackEndApplication">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="BackEndApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackEnd" />
       <extension name="coverage">
@@ -76,6 +78,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.clean.backend" />
       <option name="MAIN_CLASS_NAME" value="com.clean.backend.BackEndApplicationTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,6 +100,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:5173">
+      <method v="2" />
+    </configuration>
     <configuration name="BackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="BackEnd" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.clean.backend.BackEndApplication" />
@@ -104,6 +118,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="node" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="JUnit.BackEndApplicationTests" />
+      <item itemvalue="JUnit.BackEndApplicationTests.contextLoads" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.BackEndApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BackEndApplicationTests.contextLoads" />
@@ -121,7 +161,7 @@
       <updated>1699626986375</updated>
       <workItem from="1699626989083" duration="677000" />
       <workItem from="1699627675586" duration="599000" />
-      <workItem from="1699628283805" duration="11414000" />
+      <workItem from="1699628283805" duration="14741000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -139,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700321087242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2023/11/19 9:57&#10;Service Controller简单用例完成">
+      <option name="closed" value="true" />
+      <created>1700359074935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700359074935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题" />
     <MESSAGE value="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功" />
+    <MESSAGE value="2023/11/19 9:57&#10;Service Controller简单用例完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/19 9:57&#10;Service Controller简单用例完成" />
   </component>
 </project>
