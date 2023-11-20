@@ -16,6 +16,13 @@ public class VisitorService implements IVisitorService {
     public String getVisitorById(int id) {
         ApiResponse<Visitor> apiResponse = new ApiResponse<>();
         Visitor visitor = visitorDao.getVisitorById(id);
+        if(visitor==null){
+            System.out.println("查无此人");
+            return apiResponse.fail("查无此人");
+        }
         return apiResponse.success(visitor);
     }
+
+
+
 }

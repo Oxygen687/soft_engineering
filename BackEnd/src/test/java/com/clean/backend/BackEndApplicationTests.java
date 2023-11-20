@@ -1,19 +1,19 @@
 package com.clean.backend;
 
-import com.clean.backend.entity.Visitor;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.clean.backend.dao.VisitorDao;
+import com.clean.backend.dao.normalVisitorDao;
 @SpringBootTest
 class BackEndApplicationTests {
 
     @Autowired
-    VisitorDao visitorDao;
+    normalVisitorDao normalVisitorDao;
     @Test
     void contextLoads() {
-        Visitor visitor = visitorDao.getVisitorById(1);
-        System.out.println(visitor.toString());
+        int res = normalVisitorDao.insertinfo("岗欢羊","苏州技师学院","111111111","沪A88888","平江悦");
+
     }
 
 }
