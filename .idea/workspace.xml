@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,7 +69,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Spring Boot.BackEndApplication">
     <configuration name="BackEndApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackEnd" />
       <extension name="coverage">
@@ -166,6 +168,12 @@
       <workItem from="1700408084647" duration="141000" />
       <workItem from="1700408246811" duration="2427000" />
       <workItem from="1700445705654" duration="13193000" />
+      <workItem from="1700470803429" duration="75000" />
+      <workItem from="1700471561849" duration="546000" />
+      <workItem from="1700472502759" duration="619000" />
+      <workItem from="1700534235411" duration="7045000" />
+      <workItem from="1700580337565" duration="354000" />
+      <workItem from="1700638548440" duration="9137000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -198,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700470417472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请">
+      <created>1700470819504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700470819504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
