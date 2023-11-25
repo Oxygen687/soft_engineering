@@ -11,6 +11,6 @@ public class Application {
     private String visitorName;
     private int apartmentId;
     private String apartmentName;
-    private String administrator_id;
+    private int administrator_id;
     private int applicationStatue;
 }

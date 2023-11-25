@@ -8,9 +8,9 @@ import lombok.Data;
 public class Visit {
     private int id;
     private int visitorId;
-    private String vistiorName;
+    private String visitorName;
     private int apartmentId;
     private String apartmentName;
-    private String visitdate;
+    private String visitDate;
     private int visitStatue;
 }

@@ -39,5 +39,55 @@ public class AdministratorService implements IVAdministratorService {
             return apiResponse.fail("暂无待审批申请！");
         }
         return apiResponse.success(list);
+
+    }
+    @Override
+    public String startVisit(int id) {
+        ApiResponse<String> apiResponse = new ApiResponse();
+        administratorDao.manageVisit(id,0);
+        return apiResponse.success("访客已开始！");
+    }
+
+    @Override
+    public String finishVisit(int id) {
+        ApiResponse<String> apiResponse = new ApiResponse();
+        administratorDao.manageVisit(id,1);
+        return apiResponse.success("访客已结束！");
+
+    }
+
+    @Override
+    public String startVIPVisit(int id) {
+        int VIPStatue = administratorDao.selectVIPStatue(id);
+        ApiResponse<String> apiResponse = new ApiResponse<>();
+        if(VIPStatue == 21){
+            administratorDao.manageVIP(id,0);
+            return apiResponse.success("访问已开始！");
+        }
+        else {
+            return apiResponse.fail("请等待审核！");
+        }
+    }
+
+    @Override
+    public String finishVIPVisitor(int id) {
+        ApiResponse<String> apiResponse = new ApiResponse<>();
+        administratorDao.manageVIP(id,1);
+        return apiResponse.success("访问结束！");
+    }
+
+    @Override
+    public String login(String administratorName, int password) {
+        ApiResponse<Administrator> apiResponse = new ApiResponse<>();
+        Administrator administrator = administratorDao.getByaccount(administratorName);
+        if(administrator == null){
+            return apiResponse.fail("账号不存在！");
+        }
+        if(password != administrator.getPassword()){
+            return apiResponse.fail("密码错误");
+        }
+        System.out.println("ok");
+        return apiResponse.success(administrator);
     }
 }
+

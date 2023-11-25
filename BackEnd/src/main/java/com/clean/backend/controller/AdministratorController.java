@@ -15,4 +15,10 @@ public class AdministratorController {
     public String getMyApproval(@RequestParam(name = "id") int id) {
         return administratorService.getMyApproval(id);
     }
+
+    @PostMapping
+    public String login(@RequestParam String administrator,
+                        @RequestParam int password){
+        return administratorService.login(administrator,password);
+    }
 }

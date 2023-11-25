@@ -12,7 +12,7 @@ public interface VisitorDao {
     Visitor getVisitorById(int id);
 
     //插入visitor表
-    @Insert("insert into visitor(visitorName,type,secondaryId) values (#{name},#{type},select id from normalVisitor where name = #{name}")//还是说后面直接写secomndaryID/select id from normalVisitor where name= #{name}
+    @Insert("insert into visitor(visitorName,type,secondaryId) values (#{name},#{type},#{secondaryId})")//还是说后面直接写secomndaryID/select id from normalVisitor where name= #{name}
     int insertVisitor(String name,int type,int secondaryId);
     //insert into visitor(visitorName,type,secondaryId) values (#{name},#{type},select id from normalVisitor where name = #{name})
 

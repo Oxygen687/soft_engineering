@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/22 20:04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +74,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.BackEndApplication">
+  <component name="RunManager" selected="JUnit.BackEndApplicationTests.zzgss">
     <configuration name="BackEndApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackEnd" />
       <extension name="coverage">
@@ -97,6 +102,38 @@
       <option name="PACKAGE_NAME" value="com.clean.backend" />
       <option name="MAIN_CLASS_NAME" value="com.clean.backend.BackEndApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackEndApplicationTests.zgs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clean.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clean.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.clean.backend.BackEndApplicationTests" />
+      <option name="METHOD_NAME" value="zgs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackEndApplicationTests.zzgss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clean.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clean.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.clean.backend.BackEndApplicationTests" />
+      <option name="METHOD_NAME" value="zzgss" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,6 +178,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="JUnit.BackEndApplicationTests.zzgss" />
+      <item itemvalue="JUnit.BackEndApplicationTests.zgs" />
       <item itemvalue="JUnit.BackEndApplicationTests" />
       <item itemvalue="JUnit.BackEndApplicationTests.contextLoads" />
       <item itemvalue="npm.dev" />
@@ -148,6 +187,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BackEndApplicationTests.zzgss" />
+        <item itemvalue="JUnit.BackEndApplicationTests.zgs" />
         <item itemvalue="JUnit.BackEndApplicationTests.contextLoads" />
         <item itemvalue="JUnit.BackEndApplicationTests" />
       </list>
@@ -173,7 +214,10 @@
       <workItem from="1700472502759" duration="619000" />
       <workItem from="1700534235411" duration="7045000" />
       <workItem from="1700580337565" duration="354000" />
-      <workItem from="1700638548440" duration="9137000" />
+      <workItem from="1700638548440" duration="11408000" />
+      <workItem from="1700705954547" duration="599000" />
+      <workItem from="1700806775233" duration="6308000" />
+      <workItem from="1700878926874" duration="5303000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -213,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700470819504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2023/11/22 20:04">
+      <created>1700654754017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700654754017</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +286,37 @@
     <MESSAGE value="2023/11/18 11:24&#10;Dao层、实体类简单示例&#10;连接数据库&#10;Dao层测试成功" />
     <MESSAGE value="2023/11/19 9:57&#10;Service Controller简单用例完成" />
     <MESSAGE value="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请" />
+    <MESSAGE value="2023/11/22 20:04" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/22 20:04" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
+          <line>39</line>
+          <properties class="com.clean.backend.BackEndApplicationTests" method="zgs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
+          <line>55</line>
+          <properties class="com.clean.backend.BackEndApplicationTests" method="zzgss">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
