@@ -60,6 +60,7 @@ public class AdministratorService implements IVAdministratorService {
     public String startVIPVisit(int id) {
         int VIPStatue = administratorDao.selectVIPStatue(id);
         ApiResponse<String> apiResponse = new ApiResponse<>();
+        //活动开始之前检查是否审核通过
         if(VIPStatue == 21){
             administratorDao.manageVIP(id,0);
             return apiResponse.success("访问已开始！");

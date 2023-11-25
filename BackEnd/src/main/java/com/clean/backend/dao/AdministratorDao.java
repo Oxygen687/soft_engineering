@@ -39,4 +39,6 @@ public interface AdministratorDao {
     @Select("select applicationStatue from VIPVisitor where id = #{id}")
     int selectVIPStatue(int id);
 
+
+
 }

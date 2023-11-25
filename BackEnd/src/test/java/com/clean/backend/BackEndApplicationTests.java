@@ -4,16 +4,17 @@ package com.clean.backend;
 import com.clean.backend.entity.Application;
 import com.clean.backend.entity.NormalVisitor;
 import com.clean.backend.entity.Visit;
-import com.clean.backend.entity.Visitor;
+import com.clean.backend.entity.*;
 import com.clean.backend.entity.VipVisitor;
-import com.clean.backend.service.impl.AdministratorService;
+import com.clean.backend.service.impl.*;
 import com.clean.backend.service.impl.normalVisitorService;
+import com.clean.backend.service.impl.GeneralApartmentService;
 import com.clean.backend.service.impl.VisitorService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.clean.backend.dao.normalVisitorDao;
+import com.clean.backend.dao.*;
 import com.clean.backend.dao.AdministratorDao;
 import com.clean.backend.dao.VisitorDao;
 
@@ -29,8 +30,21 @@ class BackEndApplicationTests {
     AdministratorService administratorService;
     @Autowired
     normalVisitorService normalVisitorService;
+
     @Autowired
-    VisitorService visitorService;
+    GeneralApartmentDao generalApartmentDao;
+
+    @Autowired
+    GeneralManagerDao generalManagerDao;
+    @Autowired
+    GeneralManagerService generalManagerService;
+    @Autowired
+    GeneralApartmentService generalApartmentService;
+    @Autowired
+    TemDriverService temDriverService;
+    @Autowired
+    TemDriverDao temDriverDao;
+
     @Test
     void contextLoads() {
         System.out.println(administratorService.getMyApproval(1));
@@ -54,6 +68,8 @@ class BackEndApplicationTests {
 
     @Test
     void zzgss(){
-        System.out.println(administratorService.login("wzj",112233));
+        TemDriver temDriver = new TemDriver(1,"岗欢羊","苏州科技大学","11111111","沪A66688",2);
+        System.out.println(temDriverDao.selectSurvey());
+
     }
 }
