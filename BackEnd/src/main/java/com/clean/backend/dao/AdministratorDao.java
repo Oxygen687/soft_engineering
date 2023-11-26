@@ -3,6 +3,7 @@ package com.clean.backend.dao;
 import com.clean.backend.entity.Application;
 import com.clean.backend.entity.VipVisitor;
 import com.clean.backend.entity.Administrator;
+import com.clean.backend.entity.Visit;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -13,19 +14,23 @@ import java.util.List;
 @Mapper
 public interface AdministratorDao {
     //查看自己所有的待审批
-    @Select("select * from application where administrator_id = #{id} and applicationStatue = 0")
-    List<Application> getMyApproval(int id);
+    @Select("select * from application where visitAdministrator = #{name} and applicationStatue = 0")
+    List<Application> getMyApproval(String name);
 
     // 查询信息
     @Select("select * from administrator where administratorName = #{administratorName}")
     Administrator getByaccount(String administratorName);
     //同意/拒绝申请
-    @Update("update application set applicationStatue = #{statue} where visitorId = #{visitorId}")
-    int agreeAppliaction(int visitorId,int statue);
+    @Update("update application set applicationStatue = #{statue} where visitorName = #{visitorName}")
+    int agreeAppliaction(String visitorName,int statue);
+
+    //查询活动管理
+    @Select("select * from visit where visitAdministrator = #{visitAdministrator}")
+    List<Visit> getVisit(String visitAdministrator);
 
     //管理拜访的开始与结束
-    @Update("update visit set visitStatue = #{statue} where visitorId = #{id}")
-    int manageVisit(int id,int statue);
+    @Update("update visit set visitStatue = #{statue} where visitorName = #{visitorName}")
+    int manageVisit(String visitorName,int statue);
 
     //VIP访客申请
     @Insert("insert into VIPVisitor(company,licensePlateNumber) values(#{company},#{licensePlateNumber})")

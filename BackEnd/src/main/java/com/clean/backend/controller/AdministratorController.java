@@ -12,8 +12,8 @@ public class AdministratorController {
     AdministratorService administratorService;
 
     @GetMapping("/get")
-    public String getMyApproval(@RequestParam(name = "id") int id) {
-        return administratorService.getMyApproval(id);
+    public String getMyApproval(@RequestParam(name = "name") String name) {
+        return administratorService.getMyApproval(name);
     }
 
     @PostMapping

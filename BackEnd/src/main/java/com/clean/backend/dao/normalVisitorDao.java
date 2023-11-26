@@ -20,11 +20,11 @@ public interface normalVisitorDao {
     NormalVisitor getMyapplication(int id);
 
     //将申请信息传入visit表
-    @Insert("insert into visit(visitorName,apartmentName) values (#{name},#{visitApartment})")
+    @Insert("insert into visit(visitorName,apartmentName,visitAdministrator) values (#{visitorName},#{visitApartment},#{visitAdministrator})")
     int insertvisit(Visit visit);
 
     //将申请传入application表
-    @Insert("insert into application(visitorName,apartmentName,applicationStatue) values(#{name},#{visitApartment})")
+    @Insert("insert into application(visitorName,apartmentName,visitAdministrator) values(#{name},#{visitApartment},#{visitAdministrator})")
     int insertapplication(Application application);
 
 

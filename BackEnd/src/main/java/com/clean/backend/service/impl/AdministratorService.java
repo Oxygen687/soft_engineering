@@ -17,23 +17,23 @@ public class AdministratorService implements IVAdministratorService {
     AdministratorDao administratorDao;
 
     @Override
-    public String agreeApplication(int visitorId) {
+    public String agreeApplication(String name) {
         ApiResponse<String> apiResponse = new ApiResponse();
-        administratorDao.agreeAppliaction(visitorId,1);
+        administratorDao.agreeAppliaction(name,1);
         return apiResponse.success("操作成功，已同意申请");
     }
 
     @Override
-    public String refuseApplication(int visitorId) {
+    public String refuseApplication(String name) {
         ApiResponse<String> apiResponse = new ApiResponse();
-        administratorDao.agreeAppliaction(visitorId,-1);
+        administratorDao.agreeAppliaction(name,-1);
         return apiResponse.fail("操作成功，已拒绝申请");
     }
 
     @Override
-    public String getMyApproval(int id) {
+    public String getMyApproval(String name) {
         ApiResponse<List<Application>> apiResponse = new ApiResponse<>();
-        List<Application> list = administratorDao.getMyApproval(id);
+        List<Application> list = administratorDao.getMyApproval(name);
         if(list == null){
             System.out.println("您当前还没有待审批的申请！");
             return apiResponse.fail("暂无待审批申请！");
@@ -42,16 +42,16 @@ public class AdministratorService implements IVAdministratorService {
 
     }
     @Override
-    public String startVisit(int id) {
+    public String startVisit(String visitorName) {
         ApiResponse<String> apiResponse = new ApiResponse();
-        administratorDao.manageVisit(id,0);
+        administratorDao.manageVisit(visitorName,0);
         return apiResponse.success("访客已开始！");
     }
 
     @Override
-    public String finishVisit(int id) {
+    public String finishVisit(String visitorName) {
         ApiResponse<String> apiResponse = new ApiResponse();
-        administratorDao.manageVisit(id,1);
+        administratorDao.manageVisit(visitorName,1);
         return apiResponse.success("访客已结束！");
 
     }

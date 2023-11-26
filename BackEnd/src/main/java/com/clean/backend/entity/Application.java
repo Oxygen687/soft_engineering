@@ -9,5 +9,6 @@ public class Application {
     private int id;
     private String name;
     private String visitApartment;
-    private int applicationStatue;
+
+    private String visitAdministrator;
 }

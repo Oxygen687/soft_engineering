@@ -7,7 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class Visit {
     private int id;
-    private String name;
+    private String visitorName;
     private String visitApartment;
-    private int visitStatue;
+    private String visitAdministrator;
 }

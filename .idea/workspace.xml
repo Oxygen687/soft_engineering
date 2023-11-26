@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/22 20:04">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/normalVisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/normalVisitorDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/VisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/VisitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +224,8 @@
       <workItem from="1700806775233" duration="6308000" />
       <workItem from="1700878926874" duration="10915000" />
       <workItem from="1700897953676" duration="25000" />
-      <workItem from="1700898051328" duration="16105000" />
+      <workItem from="1700898051328" duration="16577000" />
+      <workItem from="1700961402224" duration="4679000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -286,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700891274283</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法">
+      <created>1700927875818</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700927875818</updated>
+    </task>
+    <task id="LOCAL-00011" summary="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现">
+      <created>1700928053325</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700928053325</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,19 +330,21 @@
     <MESSAGE value="2023/11/19 9:57&#10;Service Controller简单用例完成" />
     <MESSAGE value="2023/11/20 16:50&#10;完成访客的预约功能，并查看自己提交的访客申请" />
     <MESSAGE value="2023/11/22 20:04" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/22 20:04" />
+    <MESSAGE value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法" />
+    <MESSAGE value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
-          <line>52</line>
+          <line>50</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
-          <line>53</line>
+          <line>51</line>
           <properties class="com.clean.backend.BackEndApplicationTests" method="zgs">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
