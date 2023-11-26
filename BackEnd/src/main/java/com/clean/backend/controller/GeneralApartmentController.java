@@ -10,4 +10,17 @@ import org.springframework.web.bind.annotation.*;
 public class GeneralApartmentController {
     @Autowired
     GeneralApartmentService generalApartmentService;
+
+    @GetMapping ("/getApproval")
+    public String getApproval(){
+        return  generalApartmentService.getApproval();
+    }
+    @GetMapping("/agree")
+    public String agreeApplication(@RequestParam(name="id") int id){
+        return generalApartmentService.agreeApplication(id);
+    }
+    @GetMapping("/refuse")
+    public String refuseApplication(@RequestParam(name="id") int id){
+        return generalApartmentService.refuseApplication(id);
+    }
 }

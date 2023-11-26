@@ -16,15 +16,15 @@ public interface normalVisitorDao {
     int insertinfo(NormalVisitor normalVisitor);
 
     //查看自己的申请
-    @Select("select * from normalVisitor where id = #{id}")
-    NormalVisitor getMyapplication(int id);
+    @Select("select * from application where name = #{name}")
+    NormalVisitor getMyapplication(String name);
 
     //将申请信息传入visit表
-    @Insert("insert into visit(visitorName,apartmentName,visitAdministrator) values (#{visitorName},#{visitApartment},#{visitAdministrator})")
+    @Insert("insert into visit(name,visitApartment,visitAdministrator) values (#{name},#{visitApartment},#{visitAdministrator})")
     int insertvisit(Visit visit);
 
     //将申请传入application表
-    @Insert("insert into application(visitorName,apartmentName,visitAdministrator) values(#{name},#{visitApartment},#{visitAdministrator})")
+    @Insert("insert into application(name,visitApartment,visitAdministrator) values(#{name},#{visitApartment},#{visitAdministrator})")
     int insertapplication(Application application);
 
 

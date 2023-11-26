@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/26 11:27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/GeneralApartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/GeneralApartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/GeneralManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/GeneralManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/VisitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/VisitorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/normalVisitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/normalVisitorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/GeneralApartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/GeneralApartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/GeneralManagerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/GeneralManagerDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/VisitorDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/normalVisitorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/normalVisitorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/entity/Visit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVGeneralApartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVGeneralApartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVGeneralManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVGeneralManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVTemDriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVTemDriverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/GeneralApartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/GeneralApartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/GeneralManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/GeneralManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/TemDriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/TemDriverService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/VisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/VisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
@@ -79,7 +92,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BackEndApplicationTests.zzgss">
+  <component name="RunManager" selected="JUnit.BackEndApplicationTests.zgs">
     <configuration name="BackEndApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackEnd" />
       <extension name="coverage">
@@ -192,8 +205,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BackEndApplicationTests.zzgss" />
         <item itemvalue="JUnit.BackEndApplicationTests.zgs" />
+        <item itemvalue="JUnit.BackEndApplicationTests.zzgss" />
         <item itemvalue="JUnit.BackEndApplicationTests.contextLoads" />
         <item itemvalue="JUnit.BackEndApplicationTests" />
       </list>
@@ -225,7 +238,8 @@
       <workItem from="1700878926874" duration="10915000" />
       <workItem from="1700897953676" duration="25000" />
       <workItem from="1700898051328" duration="16577000" />
-      <workItem from="1700961402224" duration="4679000" />
+      <workItem from="1700961402224" duration="9100000" />
+      <workItem from="1700973095001" duration="12414000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -307,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700928053325</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2023/11/26 10:56">
+      <created>1700966685064</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700966685064</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +353,8 @@
     <MESSAGE value="2023/11/22 20:04" />
     <MESSAGE value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法" />
     <MESSAGE value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/25 23:56&#10;优化表结构，重新对事件流程进行分析，简化了部分方法&#10;新增短期物流司机和VIP访客功能实现" />
+    <MESSAGE value="2023/11/26 10:56" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/26 10:56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,15 +365,6 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
-          <line>51</line>
-          <properties class="com.clean.backend.BackEndApplicationTests" method="zgs">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/TemDriverService.java</url>
           <line>16</line>
           <properties class="com.clean.backend.service.impl.TemDriverService" method="insertTemDriver">
@@ -359,6 +372,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
+          <line>56</line>
+          <properties class="com.clean.backend.BackEndApplicationTests" method="zzgss">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java</url>
+          <line>51</line>
+          <properties class="com.clean.backend.BackEndApplicationTests" method="zgs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.mybatis.spring.MyBatisSystemException" package="org.mybatis.spring" />

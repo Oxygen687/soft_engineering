@@ -21,16 +21,16 @@ public interface AdministratorDao {
     @Select("select * from administrator where administratorName = #{administratorName}")
     Administrator getByaccount(String administratorName);
     //同意/拒绝申请
-    @Update("update application set applicationStatue = #{statue} where visitorName = #{visitorName}")
-    int agreeAppliaction(String visitorName,int statue);
+    @Update("update application set applicationStatue = #{statue} where name = #{name}")
+    int agreeAppliaction(String name,int statue);
 
     //查询活动管理
     @Select("select * from visit where visitAdministrator = #{visitAdministrator}")
     List<Visit> getVisit(String visitAdministrator);
 
     //管理拜访的开始与结束
-    @Update("update visit set visitStatue = #{statue} where visitorName = #{visitorName}")
-    int manageVisit(String visitorName,int statue);
+    @Update("update visit set visitStatue = #{statue} where name = #{name}")
+    int manageVisit(String name,int statue);
 
     //VIP访客申请
     @Insert("insert into VIPVisitor(company,licensePlateNumber) values(#{company},#{licensePlateNumber})")

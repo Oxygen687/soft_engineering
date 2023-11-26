@@ -11,8 +11,5 @@ public class VisitorController {
     @Autowired
     VisitorService visitorService;
 
-    @GetMapping("/get")
-    public String getVisitor(@RequestParam(name = "id") int id) {
-        return visitorService.getVisitorById(id);
-    }
+
 }

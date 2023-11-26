@@ -1,6 +1,7 @@
 package com.clean.backend.service.impl;
 
 
+import com.clean.backend.entity.Application;
 import com.clean.backend.service.IVnormalVisitorService;
 import com.clean.backend.dao.normalVisitorDao;
 import com.clean.backend.dao.VisitorDao;
@@ -17,9 +18,9 @@ public class normalVisitorService implements IVnormalVisitorService {
     @Autowired
     VisitorDao visitorDao;
     @Override
-    public String getMyapplication(int id) {
+    public String getMyapplication(String name) {
         ApiResponse<NormalVisitor> apiResponse = new ApiResponse<>();
-        NormalVisitor normalVisitor = normalVisitorDao.getMyapplication(id);
+        NormalVisitor normalVisitor = normalVisitorDao.getMyapplication(name);
         if(normalVisitor==null){
             System.out.println("查无此人");
             return apiResponse.fail("查无此人");
@@ -34,6 +35,20 @@ public class normalVisitorService implements IVnormalVisitorService {
         visitorDao.insertVisitor(name,0, visitorDao.selectId(name));
         return apiResponse.success("插入成功！");
 
+    }
+
+    @Override
+    public String insertinfo(NormalVisitor normalVisitor) {
+        ApiResponse<String> apiResponse = new ApiResponse<>();
+        normalVisitorDao.insertinfo(normalVisitor);
+        return apiResponse.success("添加成功");
+    }
+
+    @Override
+    public String insertapplication(Application application) {
+        ApiResponse<String> apiResponse = new ApiResponse<>();
+        normalVisitorDao.insertapplication(application);
+        return apiResponse.success("添加成功！");
     }
 
 

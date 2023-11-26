@@ -10,4 +10,16 @@ import org.springframework.web.bind.annotation.*;
 public class GeneralManagerController {
     @Autowired
     GeneralManagerService generalManagerService;
+    @GetMapping ("/getLastApproval")
+    public String getApproval(){
+        return  generalManagerService.getApproval();
+    }
+    @GetMapping("/lastAgree")
+    public String agreeApplication(@RequestParam(name="id") int id){
+        return generalManagerService.agreeApplication(id);
+    }
+    @GetMapping("/lastRefuse")
+    public String refuseApplication(@RequestParam(name="id") int id){
+        return generalManagerService.refuseApplication(id);
+    }
 }

@@ -26,4 +26,11 @@ public class TemDriverService implements IVTemDriverService {
         }
     }
 
+    @Override
+    public String selectSurvey() {
+        ApiResponse<List<String>> apiResponse = new ApiResponse<>();
+        List<String> list = temDriverDao.selectSurvey();
+        return apiResponse.success(list);
+    }
+
 }

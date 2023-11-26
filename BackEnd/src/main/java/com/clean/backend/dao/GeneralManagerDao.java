@@ -5,10 +5,12 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import java.util.List;
+
 @Mapper
 public interface GeneralManagerDao {
     @Select("select * from VIPVisitor where applicationStatue = 11")
-    VipVisitor getApproval();
+    List<VipVisitor> getApproval();
     @Update("update VIPVisitor set applicationStatue = #{applicationStatue} where id = #{id}")
     int manageApplication(int id,int applicationStatue);
     @Update("update VIPVisitor set visitStatue = #{visitStatue} where id = #{id}")
