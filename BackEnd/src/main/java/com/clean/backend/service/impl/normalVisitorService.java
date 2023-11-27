@@ -2,6 +2,7 @@ package com.clean.backend.service.impl;
 
 
 import com.clean.backend.entity.Application;
+import com.clean.backend.entity.Visit;
 import com.clean.backend.service.IVnormalVisitorService;
 import com.clean.backend.dao.normalVisitorDao;
 import com.clean.backend.dao.VisitorDao;
@@ -30,26 +31,16 @@ public class normalVisitorService implements IVnormalVisitorService {
 
 
     @Override
-    public String insertVisitor(String name) {
-        ApiResponse<String> apiResponse = new ApiResponse<>();
-        visitorDao.insertVisitor(name,0, visitorDao.selectId(name));
-        return apiResponse.success("插入成功！");
-
-    }
-
-    @Override
-    public String insertinfo(NormalVisitor normalVisitor) {
+    public String insertinfo(NormalVisitor normalVisitor, Application application, Visit visit,String name) {
         ApiResponse<String> apiResponse = new ApiResponse<>();
         normalVisitorDao.insertinfo(normalVisitor);
+        normalVisitorDao.insertapplication(application);
+        normalVisitorDao.insertvisit(visit);
+        visitorDao.insertVisitor(name,0, visitorDao.selectId(name));
         return apiResponse.success("添加成功");
     }
 
-    @Override
-    public String insertapplication(Application application) {
-        ApiResponse<String> apiResponse = new ApiResponse<>();
-        normalVisitorDao.insertapplication(application);
-        return apiResponse.success("添加成功！");
-    }
+
 
 
 }

@@ -63,6 +63,12 @@ public class AdministratorController {
         VipVisitor vipVisitor = new VipVisitor(1,company,licensePlateNumber);
         return administratorService.insertVIP(vipVisitor);
     }
+    //查看VIP访客
+    @GetMapping("/selectVIP")
+    public String selectVIP(){
+        return  administratorService.selectVIP();
+    }
+
     @GetMapping("selectVIPStatue")
     public String selectVIPStatue(@RequestParam(name="id") int id){
         return administratorService.selectVIPStatue(id);

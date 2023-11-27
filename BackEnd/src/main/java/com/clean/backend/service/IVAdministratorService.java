@@ -17,4 +17,5 @@ public interface IVAdministratorService {
     String getVisit(String visitAdministrator);
     String insertVIP(VipVisitor visitor);
     String selectVIPStatue(int id);
+    String selectVIP();
 }

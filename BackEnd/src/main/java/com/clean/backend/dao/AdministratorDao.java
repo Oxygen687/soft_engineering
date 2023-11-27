@@ -36,6 +36,9 @@ public interface AdministratorDao {
     @Insert("insert into VIPVisitor(company,licensePlateNumber) values(#{company},#{licensePlateNumber})")
     int insertVIP(VipVisitor visitor);
 
+    //查看VIP信息
+    @Select("select id,company,licensePlateNumber from VIPVisitor")
+    List<VipVisitor> selectVIP();
     //VIP访客管理
     @Update("update VIPVisitor set visitStatue = #{statue} where id = #{id} ")
     int manageVIP(int id,int statue);

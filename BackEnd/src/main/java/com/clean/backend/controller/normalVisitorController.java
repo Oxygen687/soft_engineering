@@ -17,19 +17,14 @@ public class normalVisitorController {
     public String getMyapplication(@RequestParam(name = "name") String name) {
         return normalVisitorService.getMyapplication(name);
     }
-    @GetMapping("/insertVisitor")
-    public String insertVisitor(@RequestParam(name = "name") String name){
-        return normalVisitorService.insertVisitor(name);
-    }
+
     @GetMapping("/insertinfo")
-    public String insertinfo(@RequestParam(name = "name")String name,@RequestParam(name="company")String company,@RequestParam(name="phone")String phone,@RequestParam(name="licensePlateNumber")String licensePlateNumber,@RequestParam(name="visitApartment")String visitApartment){
+    public String insertinfo(@RequestParam(name = "name")String name,@RequestParam(name="company")String company,@RequestParam(name="phone")String phone,@RequestParam(name="licensePlateNumber")String licensePlateNumber,@RequestParam(name="visitApartment")String visitApartment,@RequestParam(name="visitAdministrator")String visitAdministator){
         NormalVisitor normalVisitor = new NormalVisitor(1,name,company,phone,licensePlateNumber,visitApartment);
-        return normalVisitorService.insertinfo(normalVisitor);
+        Application application = new Application(1,name,visitApartment,visitAdministator);
+        Visit visit = new Visit(1,name,visitApartment,visitAdministator);
+        return normalVisitorService.insertinfo(normalVisitor,application,visit,name);
     }
 
-    @GetMapping("/insertapplication")
-    public String insertapplication(@RequestParam(name="name")String name,@RequestParam(name="visitApartment")String visitApartment,@RequestParam(name="visitAdministrator")String visitAdministator){
-        Application application = new Application(1,name,visitApartment,visitAdministator);
-        return normalVisitorService.insertapplication(application);
-    }
+
 }

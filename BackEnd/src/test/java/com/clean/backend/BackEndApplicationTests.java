@@ -50,7 +50,8 @@ class BackEndApplicationTests {
     WorkerDao workerDao;
     @Test
     void zgs(){
-        System.out.println(workerService.getQuestion());
+        System.out.println(        administratorController.selectVIP()
+        );
     }
 
     @Test

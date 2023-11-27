@@ -119,5 +119,12 @@ public class AdministratorService implements IVAdministratorService {
             return apiResponse.success("审核已通过");
         }
     }
+
+    @Override
+    public String selectVIP() {
+        ApiResponse<List<VipVisitor>> apiResponse = new ApiResponse<>();
+        List<VipVisitor> list = administratorDao.selectVIP();
+        return apiResponse.success(list);
+    }
 }
 
