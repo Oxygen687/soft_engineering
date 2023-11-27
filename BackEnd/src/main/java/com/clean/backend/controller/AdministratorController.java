@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin
 @RequestMapping("/api/administrator")
 public class AdministratorController {
     @Autowired
@@ -17,9 +17,11 @@ public class AdministratorController {
         return administratorService.getMyApproval(name);
     }
 
-    @PostMapping
+    @PostMapping("/login")
     public String login(@RequestParam String administrator,
                         @RequestParam int password) {
+        System.out.println(administrator);
+        System.out.println(password);
         return administratorService.login(administrator, password);
     }
 
@@ -59,7 +61,8 @@ public class AdministratorController {
 
     //申请VIP访客
     @GetMapping("/insertVIP")
-    public String insertVIP(@RequestParam(name="company")String company,@RequestParam(name="licensePlateNumber")String licensePlateNumber){
+    public String insertVIP(@RequestParam(name="company")String company,
+                            @RequestParam(name="licensePlateNumber")String licensePlateNumber){
         VipVisitor vipVisitor = new VipVisitor(1,company,licensePlateNumber);
         return administratorService.insertVIP(vipVisitor);
     }
