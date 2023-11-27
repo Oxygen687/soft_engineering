@@ -50,16 +50,15 @@ class BackEndApplicationTests {
     WorkerDao workerDao;
     @Test
     void zgs(){
-        System.out.println(        administratorController.selectVIP()
+        System.out.println(administratorController.selectVIP()
         );
     }
 
     @Test
-    void zzgss(){
-        Worker worker = new Worker(1,"大兵","苏州牛马大学","11334466","沪B7777","平江悦","33333333");
-        Visit visit = new Visit(1,"大兵","平江悦","wzj");
-        Application application = new Application(1,"大兵","平江悦","wzj");
-        workerService.insertMyapplication(worker,visit,application);
-
+    void clean(){
+        Application application = new Application();
+        application.setName("zgs");
+        application.setVisitApartment("丽春苑");
+        normalVisitorDao.insertapplication(application);
     }
 }

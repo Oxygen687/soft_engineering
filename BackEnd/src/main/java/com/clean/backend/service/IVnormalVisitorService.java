@@ -7,6 +7,10 @@ import com.clean.backend.entity.Visit;
 public interface IVnormalVisitorService {
     //查看自己的申请
     String getMyapplication(String name);
-    String insertinfo(NormalVisitor normalVisitor, Application application, Visit visit, String name);
+    public String insertinfo(String name,
+                             String company,
+                             String phone,
+                             String licensePlateNumber,
+                             String visitApartment);
 
 }

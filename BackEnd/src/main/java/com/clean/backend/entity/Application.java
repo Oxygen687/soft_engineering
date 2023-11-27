@@ -10,5 +10,6 @@ public class Application {
     private String name;
     private String visitApartment;
 
-    private String visitAdministrator;
+    // 无参构造方法
+    public Application() {}
 }

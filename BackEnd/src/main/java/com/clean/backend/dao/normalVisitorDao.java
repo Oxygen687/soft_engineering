@@ -23,10 +23,9 @@ public interface normalVisitorDao {
     @Insert("insert into visit(name,visitApartment,visitAdministrator) values (#{name},#{visitApartment},#{visitAdministrator})")
     int insertvisit(Visit visit);
 
-    //将申请传入application表
-    @Insert("insert into application(name,visitApartment,visitAdministrator) values(#{name},#{visitApartment},#{visitAdministrator})")
+
+    //Mon.14:03 测试通过 将封装好的申请传入application表
+    @Insert("insert into application(name,visitApartment,visitAdministrator) values(#{name},#{visitApartment}," +
+            "(select administratorName from administrator where adminapartment = #{visitApartment}))")
     int insertapplication(Application application);
-
-
-
 }
