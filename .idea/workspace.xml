@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/26 16:07&#10;补充push">
+    <list default="true" id="171b5e91-265c-47af-8fd3-b2e25cedfcb4" name="Changes" comment="2023/11/27 12:52&#10;更改完善部分方法封装">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/AdministratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/normalVisitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/normalVisitorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/AdministratorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVAdministratorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVnormalVisitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/AdministratorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/normalVisitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/clean/backend/BackEndApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/TemDriverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/controller/TemDriverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/TemDriverDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/dao/TemDriverDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVTemDriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/IVTemDriverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/TemDriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/clean/backend/service/impl/TemDriverService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +220,8 @@
       <workItem from="1700961402224" duration="9100000" />
       <workItem from="1700973095001" duration="14642000" />
       <workItem from="1701050309224" duration="4107000" />
-      <workItem from="1701058777114" duration="1824000" />
+      <workItem from="1701058777114" duration="1982000" />
+      <workItem from="1701071802459" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="2023/11/10 11:23&#10;搭建好了项目基本结构&#10;新建了简单用例，经测试没有问题">
       <option name="closed" value="true" />
@@ -327,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700986079840</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2023/11/27 12:52&#10;更改完善部分方法封装">
+      <created>1701060748312</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701060748312</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +359,8 @@
     <MESSAGE value="2023/11/26 10:56" />
     <MESSAGE value="2023/11/26 16:06&#10;后端功能全部实现" />
     <MESSAGE value="2023/11/26 16:07&#10;补充push" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/11/26 16:07&#10;补充push" />
+    <MESSAGE value="2023/11/27 12:52&#10;更改完善部分方法封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/11/27 12:52&#10;更改完善部分方法封装" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
