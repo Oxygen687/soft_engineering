@@ -14,23 +14,11 @@ public class TemDriverService implements IVTemDriverService {
     @Autowired
     TemDriverDao temDriverDao;
     @Override
-    public String insertTemDriver(TemDriver temDriver,int ans1,int ans2,int ans3,int ans4,int ans5) {
+    public String insertTemDriver(TemDriver temDriver) {
         ApiResponse<String> apiResponse = new ApiResponse<>();
         temDriverDao.insertTemDriver(temDriver);
-        if(ans1 == 1 & ans2 == 0 & ans3 == 1 & ans4 == 1 & ans5 == 0){
-            temDriverDao.successInsert(temDriverDao.selectByName(temDriver.getDriverName()),1);
-            return apiResponse.success("申请成功！");
-        }
-        else {
-            return apiResponse.fail("答题错误，无法预约，请重新答题！");
-        }
+        return apiResponse.success("申请成功！");
     }
 
-    @Override
-    public String selectSurvey() {
-        ApiResponse<List<String>> apiResponse = new ApiResponse<>();
-        List<String> list = temDriverDao.selectSurvey();
-        return apiResponse.success(list);
-    }
 
 }

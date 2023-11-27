@@ -12,14 +12,9 @@ public class TemDriverController {
     @Autowired
     TemDriverService temDriverService;
 
-    @GetMapping("/getSurvey")
-    public String selectSurvey(){
-        return temDriverService.selectSurvey();
-    }
-
     @GetMapping("insertTemDriver")
-    public String insertTemDriver(@RequestParam(name="driverName") String driverName,@RequestParam(name="phone")String phone,@RequestParam(name="company")String company,@RequestParam(name="licensePlateNumber")String licensePlateNumber,@RequestParam(name="planTimes")int planTimes, @RequestParam(name="ans1") int ans1, @RequestParam(name="ans2") int ans2,@RequestParam(name="ans3") int ans3, @RequestParam(name="ans4") int ans4,@RequestParam(name="ans5") int ans5){
+    public String insertTemDriver(@RequestParam(name="driverName") String driverName,@RequestParam(name="phone")String phone,@RequestParam(name="company")String company,@RequestParam(name="licensePlateNumber")String licensePlateNumber,@RequestParam(name="planTimes")int planTimes){
         TemDriver temDriver  = new TemDriver(1,driverName,company,phone,licensePlateNumber,planTimes);
-        return  temDriverService.insertTemDriver(temDriver,ans1,ans2,ans3,ans4,ans5);
+        return  temDriverService.insertTemDriver(temDriver);
     }
 }
